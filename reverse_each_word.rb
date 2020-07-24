@@ -2,6 +2,6 @@ require 'pry'
 
 def reverse_each_word (sentence)
   array_words = sentence.split
-  array_words.map{ |word| binding.pry word.reverse }
-  
+  array_words.each{ |word| word.reverse }
+   binding.pry 
 end
